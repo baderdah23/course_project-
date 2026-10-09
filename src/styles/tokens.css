@@ -1,0 +1,115 @@
+/* ---------- Fonts (families come from next/font in layout.tsx) ---------- */
+@theme inline {
+  --font-heading: var(--font-spartan), "League Spartan", system-ui, sans-serif;
+  --font-sans:
+    var(--font-poppins), Poppins, system-ui, -apple-system, "Segoe UI",
+    sans-serif;
+}
+
+@theme {
+  --color-*: initial;
+
+  /* Neutral */
+  --color-white: #ffffff;
+  --color-surface: #ffffff; /* page background */
+  --color-surface-alt: #f5f9fa; /* breadcrumb + title band */
+  --color-ink: #181818; /* headings, main text */
+  --color-muted: #6c6c6c; /* secondary text (5.3:1 on white) */
+  --color-soft: #737373; /* descriptions, dates (4.7:1 on white) */
+  --color-line: #e5e5e5; /* borders, dividers */
+  --color-track: #e6e6e6; /* progress track */
+
+  /* Brand */
+  --color-primary: #41b69d; /* reference brand color (decorative use) */
+  --color-primary-strong: #1e7b69; /* buttons, focus: passes AA with white text */
+  --color-primary-strong-hover: #176454;
+  --color-progress: #6abd8a; /* progress fill */
+  --color-accent: #e54860; /* play button (decorative use) */
+  --color-accent-strong: #c9304a; /* accent as text: passes AA */
+
+  /* Badges + states */
+  --color-success-soft: #f2faf8; /* QUESTION badge background */
+  --color-danger-soft: #fdf2f4; /* MINUTES badge background */
+  --color-lesson-active: #f2faf8; /* [VERIFY] current lesson row */
+  --color-lesson-locked: #9a9a9a; /* [VERIFY] lock icon */
+  --color-focus: #1e7b69; /* keyboard focus ring */
+  --color-overlay-video: rgb(0 0 0 / 0.45); /* dark layer on poster [VERIFY] */
+  --color-overlay-modal: rgb(24 24 24 / 0.55);
+
+  /* ---------- Type scale (fluid: one token, no media queries) ---------- */
+  --text-*: initial;
+  --text-xxs: 0.8125rem;
+  --text-xxs--line-height: 1.4; /* 13px progress % */
+  --text-xs: 0.9375rem;
+  --text-xs--line-height: 1.4; /* 15px badges */
+  --text-sm: clamp(0.9375rem, 0.9rem + 0.1vw, 1rem);
+  --text-sm--line-height: 1.6;
+  --text-base: clamp(1rem, 0.95rem + 0.2vw, 1.125rem);
+  --text-base--line-height: 1.65;
+  --text-lg: clamp(1.0625rem, 1rem + 0.3vw, 1.25rem);
+  --text-lg--line-height: 1.5;
+  --text-h4: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem);
+  --text-h4--line-height: 1.2;
+  --text-h3: clamp(1.375rem, 1rem + 1.4vw, 1.875rem);
+  --text-h3--line-height: 1.2;
+  --text-h2: clamp(1.5rem, 1.1rem + 1.6vw, 2.25rem);
+  --text-h2--line-height: 1.2;
+  --text-h1: clamp(1.75rem, 1.1rem + 2.6vw, 3rem);
+  --text-h1--line-height: 1.2;
+
+  /* Tracking + leading */
+  --tracking-*: initial;
+  --tracking-normal: 0;
+  --tracking-wide: 0.02em; /* body text is slightly tracked */
+  --tracking-badge: 0.04em;
+  --leading-*: initial;
+  --leading-tight: 1.2;
+  --leading-snug: 1.4;
+  --leading-body: 1.65;
+
+  /* ---------- Shape ---------- */
+  --radius-*: initial;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-full: 9999px;
+
+  /* ---------- Shadows ---------- */
+  --shadow-*: initial;
+  --shadow-card: 0 8px 30px rgb(0 0 0 / 0.06);
+  --shadow-modal: 0 20px 60px rgb(0 0 0 / 0.2);
+
+  /* ---------- Breakpoints ---------- */
+  --breakpoint-*: initial;
+  --breakpoint-sm: 40rem; /* 640  */
+  --breakpoint-md: 48rem; /* 768  */
+  --breakpoint-lg: 64rem; /* 1024 */
+  --breakpoint-xl: 80rem; /* 1280 */
+  --breakpoint-2xl: 96rem; /* 1536 */
+
+  /* ---------- Layout + motion ---------- */
+  --container-content: 94.5rem; /* 1512px -> max-w-content */
+  --ease-standard: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+/* Spacing uses Tailwind's default scale: 1 unit = 4px (p-4 = 16px, p-13 = 52px). */
+
+/* ---------- Component dimensions (used as h-(--btn-height), px-(--page-gutter)) ---------- */
+:root {
+  --page-gutter: clamp(1rem, 3.44vw, 3.25rem); /* 52px at 1512 */
+  --layout-gap: clamp(1.5rem, 5.42vw, 5.125rem); /* ~82px at 1512 */
+  --video-ratio: 864 / 576; /* [VERIFY] */
+  --topics-max-h: clamp(
+    28rem,
+    60vh,
+    40rem
+  ); /* internal scroll height [VERIFY] */
+  --avatar-size: clamp(2.75rem, 2.2rem + 1.2vw, 3.5rem);
+  --social-size: 2.75rem;
+  --play-size: clamp(4rem, 3.2rem + 1.8vw, 5.25rem);
+  --btn-height: 3rem;
+  --progress-h: 0.25rem;
+  --lesson-row-h: 4rem;
+  --tap-min: 2.75rem; /* 44px minimum touch target */
+  --z-header: 10;
+  --z-modal: 100;
+}
