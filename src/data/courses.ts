@@ -2,7 +2,10 @@ import type { Course } from "@/types/course";
 import { buildTopics, type TopicInput } from "@/lib/curriculum";
 import { youtubeThumbnail } from "@/lib/youtube";
 
-type CourseInput = Omit<Course, "image" | "topics" | "lessonCount"> & {
+type CourseInput = Omit<
+  Course,
+  "image" | "topics" | "lessonCount" | "summaryPdf"
+> & {
   topics: TopicInput[];
 };
 
@@ -11,6 +14,7 @@ function createCourse({ topics, ...course }: CourseInput): Course {
   return {
     ...course,
     image: youtubeThumbnail(course.video.id),
+    summaryPdf: `/pdfs/${course.slug}.pdf`,
     topics: built,
     lessonCount: built.reduce((sum, topic) => sum + topic.lessons.length, 0),
   };

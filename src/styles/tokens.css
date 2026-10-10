@@ -1,4 +1,3 @@
-/* ---------- Fonts (families come from next/font in layout.tsx) ---------- */
 @theme inline {
   --font-heading: var(--font-spartan), "League Spartan", system-ui, sans-serif;
   --font-sans:
@@ -35,6 +34,12 @@
   --color-focus: #1e7b69; /* keyboard focus ring */
   --color-overlay-video: rgb(0 0 0 / 0.45); /* dark layer on poster [VERIFY] */
   --color-overlay-modal: rgb(24 24 24 / 0.55);
+
+  /* Avatars */
+  --color-avatar-green: #2fa36b;
+  --color-avatar-pink: #e0529c;
+  --color-avatar-red: #e54860;
+  --color-avatar-yellow: #f2b01e;
 
   /* ---------- Type scale (fluid: one token, no media queries) ---------- */
   --text-*: initial;
@@ -97,7 +102,7 @@
 :root {
   --page-gutter: clamp(1rem, 3.44vw, 3.25rem); /* 52px at 1512 */
   --layout-gap: clamp(1.5rem, 5.42vw, 5.125rem); /* ~82px at 1512 */
-  --video-ratio: 864 / 576; /* [VERIFY] */
+  --video-ratio: 3 / 2;
   --topics-max-h: clamp(
     28rem,
     60vh,
