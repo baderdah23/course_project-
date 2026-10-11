@@ -105,25 +105,25 @@ export const courses: Course[] = [
   }),
   createCourse({
     slug: "cpp-programming",
-    title: "C++ Programming",
-    instructor: "Bro Code",
+    title: "C++ Programming Course",
+    instructor: "Caleb Curry",
     description:
-      "Start from zero and build a solid foundation in C++, from variables to object-oriented code.",
-    duration: "6 hours",
+      "Master modern C++ programming from fundamental syntax, memory management, and OOP to advanced problem solving.",
+    duration: "4 hours",
     language: "English",
-    enrolled: 74,
+    enrolled: 185,
     video: {
       provider: "youtube",
-      id: "-TkoO8Z07hI",
-      title: "C++ Full Course for free",
-      channel: "Bro Code",
-      durationSeconds: 21600,
+      id: "vLnPwxZdW4Y",
+      title: "C++ Tutorial for Beginners - Full Course",
+      channel: "freeCodeCamp.org",
+      durationSeconds: 14400,
     },
     topics: [
       {
         title: "Week 1-2",
         description:
-          "Write and run your first programs and learn the core syntax.",
+          "Write and run your first programs and learn core syntax and control flow.",
         lessons: [
           "Setup and Hello World",
           "Variables and Data Types",
@@ -133,10 +133,10 @@ export const courses: Course[] = [
       },
       {
         title: "Week 3-4",
-        description: "Work with memory and structure your code with classes.",
+        description: "Work with memory, pointers, and structure your code with classes.",
         lessons: [
           "Arrays and Strings",
-          ["Pointers", 3],
+          ["Pointers and Memory", 3],
           "Classes and Objects",
           "Inheritance",
         ],

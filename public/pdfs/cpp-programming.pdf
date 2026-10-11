@@ -1,0 +1,97 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 4 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 5 0 R /Resources << /Font << /F1 7 0 R >> >> >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 6 0 R /Resources << /Font << /F1 7 0 R >> >> >>
+endobj
+5 0 obj
+<< /Length 2209 >>
+stream
+BT
+/F1 11 Tf
+45 800 Td
+16 TL
+(C++ Programming) Tj T*
+(Course summary | Instructor: Bro Code) Tj T*
+T*
+(A short summary of the course: from your first program to pointers, classes and inheritance.) Tj T*
+T*
+(Week 1-2) Tj T*
+(Setup and Hello World) Tj T*
+(Install a compiler \(g++, clang or MSVC\). Every program starts at main. Include <iostream> and) Tj T*
+(print with std::cout << "Hello" << std::endl;. Compile with g++ main.cpp -o app.) Tj T*
+T*
+(Variables and Data Types) Tj T*
+(Common types are int, double, char, bool and std::string. Declare with int age = 25;. A) Tj T*
+(variable keeps its type, and const makes a value unchangeable.) Tj T*
+T*
+(Control Flow) Tj T*
+(Use if / else, switch, for, while and do-while. break leaves a loop and continue skips to) Tj T*
+(the next round. Combine conditions with &&, || and !.) Tj T*
+T*
+(Functions) Tj T*
+(A function has a return type, a name and parameters. Declare a prototype before use. Parameters) Tj T*
+(are passed by value, or by reference with & to avoid copies. Functions can be overloaded.) Tj T*
+T*
+(Week 3-4) Tj T*
+(Arrays and Strings) Tj T*
+(Arrays have a fixed size \(int nums[5]\) and start at index 0. C++ does not check bounds.) Tj T*
+(std::vector and std::string are safer and more flexible, and offer .size\(\).) Tj T*
+T*
+(Pointers) Tj T*
+(A pointer stores a memory address. &x gives the address of x and *p reads the value at p. Use) Tj T*
+(nullptr for empty pointers. Prefer smart pointers like std::unique_ptr over raw new and) Tj T*
+(delete.) Tj T*
+T*
+(Classes and Objects) Tj T*
+(A class bundles data and functions. Constructors initialize objects, and public / private control) Tj T*
+(access. Inside a method, this points to the current object.) Tj T*
+T*
+(Inheritance) Tj T*
+(A derived class reuses a base class: class Dog : public Animal. virtual functions enable) Tj T*
+(polymorphism, and base classes used polymorphically need a virtual destructor.) Tj T*
+T*
+(Quick reference) Tj T*
+(std::cout << x                        Print a value) Tj T*
+(std::cin >> x                         Read a value) Tj T*
+(&x                                    Address of x) Tj T*
+(*p                                    Value pointed to by p) Tj T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Length 96 >>
+stream
+BT
+/F1 11 Tf
+45 800 Td
+16 TL
+(nullptr                               The empty pointer) Tj T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000000373 00000 n 
+0000002633 00000 n 
+0000002778 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+2848
+%%EOF

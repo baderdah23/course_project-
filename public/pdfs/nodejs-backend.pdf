@@ -1,0 +1,101 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 4 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 5 0 R /Resources << /Font << /F1 7 0 R >> >> >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 6 0 R /Resources << /Font << /F1 7 0 R >> >> >>
+endobj
+5 0 obj
+<< /Length 2248 >>
+stream
+BT
+/F1 11 Tf
+45 800 Td
+16 TL
+(Node.js and Express) Tj T*
+(Course summary | Instructor: John Smilga) Tj T*
+T*
+(A short summary of the course: how Node.js works, its modules and npm, and how to build a REST) Tj T*
+(API with Express.) Tj T*
+T*
+(Week 1-2) Tj T*
+(What is Node.js) Tj T*
+(Node.js is a JavaScript runtime built on the V8 engine that runs outside the browser. It uses an event) Tj T*
+(loop and non-blocking I/O, which suits servers handling many requests. Run a file with node) Tj T*
+(app.js.) Tj T*
+T*
+(Modules) Tj T*
+(CommonJS uses require\(\) and module.exports. ES modules use import and export \(set) Tj T*
+("type": "module" in package.json\). Each file has its own scope.) Tj T*
+T*
+(Built-in Modules) Tj T*
+(Node ships with modules such as fs \(files\), path, http, os and events. Prefer asynchronous file) Tj T*
+(methods \(fs.promises\) in servers, and build paths with path.join.) Tj T*
+T*
+(NPM) Tj T*
+(npm installs packages: npm init, then npm install name. Dependencies are listed in) Tj T*
+(package.json and stored in node_modules. Use devDependencies for tools and npm run for) Tj T*
+(scripts.) Tj T*
+T*
+(Week 3-4) Tj T*
+(Routing) Tj T*
+(Express maps an HTTP method and path to a handler: app.get\("/users", \(req, res\) =>) Tj T*
+(res.json\(users\)\). Route parameters like /users/:id are read from req.params. Start with) Tj T*
+(app.listen\(3000\).) Tj T*
+T*
+(Middleware) Tj T*
+(Middleware are functions \(req, res, next\) that run in order. express.json\(\) parses JSON) Tj T*
+(bodies. Call next\(\) to continue. Error handlers take four parameters: \(err, req, res, next\).) Tj T*
+T*
+(Building a REST API) Tj T*
+(Model resources with HTTP verbs: GET reads, POST creates, PUT or PATCH updates and DELETE) Tj T*
+(removes. Return clear status codes such as 200, 201, 400, 404 and 500, with JSON bodies.) Tj T*
+T*
+(Connecting a Database) Tj T*
+(Use a driver or an ODM such as Mongoose for MongoDB. Keep the connection string in an) Tj T*
+(environment variable \(process.env\) and never commit secrets. Use async / await and handle) Tj T*
+(errors.) Tj T*
+T*
+(Quick reference) Tj T*
+(require\("x"\)                          Load a module \(CommonJS\)) Tj T*
+(app.use\(express.json\(\)\)               Parse JSON bodies) Tj T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Length 247 >>
+stream
+BT
+/F1 11 Tf
+45 800 Td
+16 TL
+(res.status\(404\).json\({}\)              Send a status and JSON) Tj T*
+(process.env.PORT                      Read an environment variable) Tj T*
+(npm run <script>                      Run a package script) Tj T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000000373 00000 n 
+0000002672 00000 n 
+0000002969 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+3039
+%%EOF

@@ -1,0 +1,97 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 4 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 5 0 R /Resources << /Font << /F1 7 0 R >> >> >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 6 0 R /Resources << /Font << /F1 7 0 R >> >> >>
+endobj
+5 0 obj
+<< /Length 2344 >>
+stream
+BT
+/F1 11 Tf
+45 800 Td
+16 TL
+(Linux Fundamentals) Tj T*
+(Course summary | Instructor: Beau Carnes) Tj T*
+T*
+(A short summary of the course: what Linux is, how to move around the command line, and how files,) Tj T*
+(editors and permissions work.) Tj T*
+T*
+(Week 1-2) Tj T*
+(What is Linux) Tj T*
+(Linux is an open-source kernel created by Linus Torvalds in 1991. Together with GNU tools it forms a) Tj T*
+(full operating system used on servers, phones \(Android\), embedded devices and supercomputers.) Tj T*
+T*
+(Distributions and Installation) Tj T*
+(A distribution bundles the kernel with software and a package manager. Popular ones are Ubuntu,) Tj T*
+(Debian, Fedora and Arch. You usually install from a bootable USB image.) Tj T*
+T*
+(The Graphical Interface) Tj T*
+(Desktop environments such as GNOME, KDE Plasma and Xfce provide windows, menus and file) Tj T*
+(managers. They are optional: servers usually run without any graphical interface.) Tj T*
+T*
+(The Linux Philosophy) Tj T*
+(Programs should do one thing well. Everything is treated as a file, text is the common interface, and) Tj T*
+(small programs are combined with pipes \(|\).) Tj T*
+T*
+(Week 3-4) Tj T*
+(Basic Commands) Tj T*
+(Use pwd to print the current directory, ls to list files, cd to move between directories and man to read) Tj T*
+(a command's manual. Options such as ls -l change the output.) Tj T*
+T*
+(Working with Files) Tj T*
+(Create with touch and mkdir, copy with cp, move or rename with mv, delete with rm. rm -r) Tj T*
+(removes directories and cannot be undone. Read files with cat or less.) Tj T*
+T*
+(Text Editors) Tj T*
+(nano is simple and shows its shortcuts on screen. vim is modal: press i to insert text, Esc to return) Tj T*
+(to normal mode, and :wq to save and quit \(:q! quits without saving\).) Tj T*
+T*
+(Users and Permissions) Tj T*
+(Every file has an owner, a group and permissions for read, write and execute. chmod 755 file) Tj T*
+(gives the owner full access and others read and execute. sudo runs a command as the superuser.) Tj T*
+T*
+(Quick reference) Tj T*
+(pwd                                   Print the working directory) Tj T*
+(ls -la                                List all files with details) Tj T*
+(cd ..                                 Go up one directory) Tj T*
+(chmod +x file                         Make a file executable) Tj T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Length 104 >>
+stream
+BT
+/F1 11 Tf
+45 800 Td
+16 TL
+(grep text file                        Search for text in a file) Tj T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000000373 00000 n 
+0000002768 00000 n 
+0000002922 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+2992
+%%EOF

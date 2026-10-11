@@ -1,0 +1,100 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 4 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 5 0 R /Resources << /Font << /F1 7 0 R >> >> >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 6 0 R /Resources << /Font << /F1 7 0 R >> >> >>
+endobj
+5 0 obj
+<< /Length 2178 >>
+stream
+BT
+/F1 11 Tf
+45 800 Td
+16 TL
+(HTML from Scratch) Tj T*
+(Course summary | Instructor: Dave Gray) Tj T*
+T*
+(A short summary of the course: the structure of a web page, from text and links to semantic tags,) Tj T*
+(tables and forms.) Tj T*
+T*
+(Week 1-2) Tj T*
+(Getting Started) Tj T*
+(HTML describes structure using elements made of tags. A page starts with <!DOCTYPE html>, then) Tj T*
+(<html lang="en"> containing <head> and <body>. Save the file as .html and open it in a) Tj T*
+(browser.) Tj T*
+T*
+(Head and Text) Tj T*
+(The <head> holds the <title>, <meta charset="utf-8"> and the viewport meta tag. In the) Tj T*
+(body use headings h1 to h6 \(one h1 per page\), paragraphs p, strong and em.) Tj T*
+T*
+(Lists and Links) Tj T*
+(Use ul for bullet lists, ol for numbered lists and li for items. Links use <a href="..."> with clear) Tj T*
+(text. With target="_blank" also add rel="noopener".) Tj T*
+T*
+(Images) Tj T*
+(Use <img src alt width height>. The alt text describes the image \(leave it empty for) Tj T*
+(decorative images\). Width and height prevent layout shifts, and loading="lazy" delays offscreen) Tj T*
+(images.) Tj T*
+T*
+(Week 3-4) Tj T*
+(Semantic Tags) Tj T*
+(header, nav, main, article, section, aside and footer describe the meaning of content.) Tj T*
+(They help accessibility and SEO. Use div only when no semantic tag fits.) Tj T*
+T*
+(Tables) Tj T*
+(Tables use table, tr, th and td, grouped with thead and tbody, and a caption. Use tables for) Tj T*
+(data, never for layout. The scope attribute on th helps screen readers.) Tj T*
+T*
+(Forms and Inputs) Tj T*
+(A form contains inputs. Link each label to its field with for and id. Input types include text,) Tj T*
+(email, password and checkbox. Add name so the value is submitted, and required for) Tj T*
+(validation.) Tj T*
+T*
+(Final Project) Tj T*
+(Combine everything in one page: a header with navigation, main content, an image, a list or table, a) Tj T*
+(contact form and a footer. Check heading order and alt text, then validate the HTML.) Tj T*
+T*
+(Quick reference) Tj T*
+(<a href>                              Create a link) Tj T*
+(<img alt>                             Image with a description) Tj T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Length 234 >>
+stream
+BT
+/F1 11 Tf
+45 800 Td
+16 TL
+(<label for>                           Name a form field) Tj T*
+(<main>                                The main page content) Tj T*
+(<meta name="viewport">                Mobile-friendly scaling) Tj T*
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000000373 00000 n 
+0000002602 00000 n 
+0000002886 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+2956
+%%EOF
