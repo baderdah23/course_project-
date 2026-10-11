@@ -88,3 +88,9 @@ export interface CourseComment {
   date: string;
   text: string;
 }
+
+export interface CourseQuestion {
+  id: string;
+  text: string;
+  date: string;
+}

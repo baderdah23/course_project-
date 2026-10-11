@@ -3,6 +3,10 @@
   --font-sans:
     var(--font-poppins), Poppins, system-ui, -apple-system, "Segoe UI",
     sans-serif;
+
+  --font-arabic:
+    var(--font-plex-arabic), "IBM Plex Sans Arabic", "Segoe UI", Tahoma,
+    sans-serif;
 }
 
 @theme {

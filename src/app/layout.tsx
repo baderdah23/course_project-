@@ -1,5 +1,9 @@
 import type { Metadata, Viewport } from "next";
-import { League_Spartan, Poppins } from "next/font/google";
+import {
+  IBM_Plex_Sans_Arabic,
+  League_Spartan,
+  Poppins,
+} from "next/font/google";
 import { SITE } from "@/lib/site";
 import "./globals.css";
 
@@ -14,6 +18,14 @@ const poppins = Poppins({
   weight: ["400", "500"],
   variable: "--font-poppins",
   display: "swap",
+});
+
+const plexArabic = IBM_Plex_Sans_Arabic({
+  subsets: ["arabic"],
+  weight: ["400"],
+  variable: "--font-plex-arabic",
+  display: "swap",
+  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -43,7 +55,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${spartan.variable} ${poppins.variable}`}>
+    <html
+      lang="en"
+      className={`${spartan.variable} ${poppins.variable} ${plexArabic.variable}`}
+    >
       <body className="bg-surface font-sans text-base leading-body tracking-wide text-ink antialiased">
         <a
           href="#main"

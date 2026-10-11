@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { CommentSection } from "@/components/comments/CommentSection";
+import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { Container } from "@/components/layout/Container";
 import { PageHeader } from "@/components/layout/PageHeader";
-import { Breadcrumb } from "@/components/layout/Breadcrumb";
+import { CourseMaterials } from "@/components/materials/CourseMaterials";
+import { ActionBar } from "@/components/player/ActionBar";
+import { CurriculumPanel } from "@/components/player/CurriculumPanel";
 import { VideoPlayer } from "@/components/player/VideoPlayer";
 import { courses } from "@/data/courses";
-import { ActionBar } from "@/components/player/ActionBar";
-import { CourseMaterials } from "@/components/materials/CourseMaterials";
-import { CommentSection } from "@/components/comments/CommentSection";
-import { CurriculumPanel } from "@/components/player/CurriculumPanel";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -59,23 +59,25 @@ export default async function CoursePage({ params }: Props) {
         }
       />
       <Container>
-        <div className="flex min-w-0 flex-col gap-6">
-          <VideoPlayer
-            slug={course.slug}
-            videoId={course.video.id}
-            title={course.video.title}
-            poster={course.image}
-          />
-          <ActionBar />
-          <div className="mt-10 flex flex-col gap-16">
-            <CourseMaterials course={course} />
-            <CommentSection slug={course.slug} />
+        <div className="grid gap-(--layout-gap) pb-20 lg:grid-cols-[minmax(0,864fr)_minmax(0,468fr)]">
+          <div className="flex min-w-0 flex-col gap-6">
+            <VideoPlayer
+              slug={course.slug}
+              videoId={course.video.id}
+              title={course.video.title}
+              poster={course.image}
+            />
+            <ActionBar slug={course.slug} courseTitle={course.title} />
+            <div className="mt-10 flex flex-col gap-16">
+              <CourseMaterials course={course} />
+              <CommentSection slug={course.slug} />
+            </div>
           </div>
+
+          <aside className="min-w-0">
+            <CurriculumPanel course={course} />
+          </aside>
         </div>
-        {/* Topics column*/}
-        <aside className="min-w-0">
-          <CurriculumPanel course={course} />
-        </aside>
       </Container>
     </main>
   );
