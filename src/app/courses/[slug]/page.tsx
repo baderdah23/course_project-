@@ -74,7 +74,7 @@ export default async function CoursePage({ params }: Props) {
             </div>
           </div>
 
-          <aside className="min-w-0">
+          <aside className="min-w-0 lg:sticky lg:top-6 lg:max-h-[calc(100vh-3rem)] lg:overflow-y-auto">
             <CurriculumPanel course={course} />
           </aside>
         </div>
